@@ -1,0 +1,17 @@
+name: "app"
+port: ":8080"
+env: "local"
+debug: true
+logger:
+  logLvl: "info"
+  logReq: true
+  logResp: true
+statsEnabled: true
+remoteProfiler:
+  enabled: true
+  profilerURL: "http://pyroscope:4040"
+remoteTrace:
+  enabled: true
+  traceAgent: "jaeger:6831"
+  traceCollector: "http://jaeger:14268/api/traces"
+  ratio: 1
